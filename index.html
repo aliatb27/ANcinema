@@ -15,7 +15,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=pk1IlJHdT0uuk0xK5-KAKRcok75H0qk6JuemZpTWHiX28oCz9aI8o2hZ7W5m_n1I6tJLtKJ_EBdJfbJswNMEUm2f8tQlJdiGR9fH9h_HdjDaGwsalqp3qXUxuaVQcLBGKP63-jrMg3TcaQLzb8b8KRSxIlWcHB0v4sVpEafo-PvfGN_VEciSkcAyvomf7WQMoTbErstnoVdtOAlf2Q4x_rCZOUMpSnmvIzIyZ6I8mmbaldKGxHKYGlp33YglHVbp0SIIdz_K2rP601C5Af4uF3CWo4ILKd_S-c-h_E6OT_8NxYiZ9vJN17R3ZRHts_Cm5DgAWH3OfRAFHzCQ3dwAUuzix17OtfCb0zMENfB7xb9iSv8WbSoNJ6gSSUAB5kiEUA_j0c_r_3G9wKl3I9TNJwC0-xjsqeClLlFyRLYWxiuEh2doGZbDE3KAGrafvrVwZHekHSHoOPSg7Q6XDi77awpKlkjWzIPNtndZOWzgesYkAMr-p04JeZzbyOAh22OJLPqrdznvcnLmaeRCfG3RIp9Mtj1vd9a8c0KdLn06i1cnzYLRzWDyqshnUxFo93_oOt0ey2cqQrnRlQnkD89lg_3PzaOT-JAb3eNqN06Er19TNW79PZcQEVO19caWoSLmLOjh_kyPGn0Mrjpyv8OuQaYFbEEz_xC2jCKNyWwM8zZvJqkiXvuu6kaGbQmz6WqoQ296uKn1FMm8mz2Gpjp-XciXa0iVVn-rYr98EnY1Jpd64elEmff92iLqh1d6g2Px26Y9es7SktKkmECYnS3Ga4d_Jj8FV_-tOZWauIQ3qZCfuQrWZDi6SuWZe7yG6aSg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zcnYxMTYyLWZpbGVzLmhzdGdyLmlvL2FjMjJmMmJhYzUxY2YzYzQvYXBpL3Jhdy9wdWJsaWNfaHRtbC9pbmRleC5waHA_YXV0aD1leUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlJanA3SW1sa0lqb3hMQ0pzYjJOaGJHVWlPaUpsYmw5SFFpSXNJblpwWlhkTmIyUmxJam9pYkdsemRDSXNJbk5wYm1kc1pVTnNhV05ySWpwbVlXeHpaU3dpY0dWeWJTSTZleUpoWkcxcGJpSTZabUZzYzJVc0ltVjRaV04xZEdVaU9tWmhiSE5sTENKamNtVmhkR1VpT25SeWRXVXNJbkpsYm1GdFpTSTZkSEoxWlN3aWJXOWthV1o1SWpwMGNuVmxMQ0prWld4bGRHVWlPblJ5ZFdVc0luTm9ZWEpsSWpwbVlXeHpaU3dpWkc5M2JteHZZV1FpT25SeWRXVjlMQ0pqYjIxdFlXNWtjeUk2VzEwc0lteHZZMnRRWVhOemQyOXlaQ0k2ZEhKMVpTd2lhR2xrWlVSdmRHWnBiR1Z6SWpwbVlXeHpaU3dpWkdGMFpVWnZjbTFoZENJNlptRnNjMlY5TENKcGMzTWlPaUpHYVd4bElFSnliM2R6WlhJaUxDSmxlSEFpT2pFM05qYzJPRFE1TnpFc0ltbGhkQ0k2TVRjMk56WTNOemMzTVgwLm9wcjdoazdnR2NkZXpBbzdwRFduWUU4TG9sQWVtRzRtTW5SNHdVNno3c3Mm"/><style>
+    <style>
         :root {
             --primary-red: #E50914;
             --background-black: #141414;
@@ -59,7 +59,7 @@
         
         .container { padding: 0 4%; }
         
-        /* Toast Notification - FIXED: Hidden by default */
+        /* Toast Notification */
         .toast {
             position: fixed;
             bottom: 80px;
@@ -73,12 +73,12 @@
             z-index: 10000;
             transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            display: none; /* Changed from flex to none */
+            display: none; 
             align-items: center; 
             gap: 10px;
         }
         .toast.active { 
-            display: flex; /* Only show when active */
+            display: flex; 
             transform: translateX(-50%) translateY(0); 
         }
         
@@ -375,7 +375,6 @@
 
         .slider-container {
             position: relative;
-            /* group for arrows */
         }
         
         .slider-arrow {
@@ -400,7 +399,7 @@
         .arrow-left:hover, .arrow-right:hover { background: rgba(0,0,0,0.8); transform: scale(1.1); }
         
         @media(max-width: 768px) {
-            .slider-arrow { display: none; } /* On mobile swipe is better */
+            .slider-arrow { display: none; }
             .row-section { margin-bottom: 30px; }
         }
 
@@ -739,7 +738,6 @@
 </head>
 <body>
 
-    <!-- Fixed: Toast hidden by default, text removed -->
     <div class="toast" id="toast">
         <i class="fas fa-check-circle" style="color: var(--primary-red); font-size: 1.2rem;"></i>
         <span id="toastMsg"></span>
@@ -1001,12 +999,12 @@
     }
 
     async function initApp() {
-        const [trending, arabicTv, persianContent, indianMovies, action] = await Promise.all([
+        const [trending, popularMovies, popularTv, action, animation] = await Promise.all([
             fetchData(`/trending/all/week?`),
-            fetchData(`/discover/tv?with_original_language=ar&sort_by=popularity.desc&`),
-            fetchData(`/discover/movie?with_original_language=fa&sort_by=popularity.desc&`), // Persian (Iran)
-            fetchData(`/discover/movie?with_original_language=hi&sort_by=popularity.desc&`), // Hindi (India)
-            fetchData(`/discover/movie?with_genres=28&`)
+            fetchData(`/movie/popular?`),
+            fetchData(`/tv/popular?`),
+            fetchData(`/discover/movie?with_genres=28&`),
+            fetchData(`/discover/movie?with_genres=16&`)
         ]);
 
         setupHeroSlideshow(trending.slice(0, 5));
@@ -1014,11 +1012,11 @@
         const container = document.getElementById('mainContainer');
         container.innerHTML = '';
         
-        createRow('الأكثر رواجاً عالمياً', trending);
-        createRow('مسلسلات عربية حصرية', arabicTv);
-        createRow('سينما إيرانية مميزة', persianContent);
-        createRow('أفلام بوليوود والهند', indianMovies);
+        createRow('الأكثر رواجاً هذا الأسبوع', trending);
+        createRow('أفلام أجنبية مشهورة', popularMovies);
+        createRow('مسلسلات عالمية', popularTv);
         createRow('أكشن وإثارة', action);
+        createRow('أنيميشن وعائلي', animation);
     }
 
     async function fetchData(endpoint) {
@@ -1580,5 +1578,4 @@
 
 </script>
 </body>
-
 </html>
